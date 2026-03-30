@@ -1,0 +1,54 @@
+{
+  "pluginAlias": "PaxCalima",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Platform Name",
+        "type": "string",
+        "default": "Pax Calima / Vent-Axia Svara Fans"
+      },
+      "fans": {
+        "title": "Manually Configured Fans (optional — auto-discovery is recommended)",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Accessory Name",
+              "type": "string",
+              "default": "Bathroom Fan"
+            },
+            "mac": {
+              "title": "MAC Address",
+              "type": "string",
+              "pattern": "^([0-9A-Fa-f]{2}:){5}([0-9A-Fa-f]{2})$",
+              "description": "Optional. Leave blank for auto-discovery."
+            },
+            "pin": {
+              "title": "PIN Code",
+              "type": "string",
+              "default": "012345",
+              "description": "Usually 012345. Change only if you set a custom PIN in the official app."
+            }
+          },
+          "required": ["name"]
+        }
+      }
+    }
+  },
+  "layout": [
+    {
+      "type": "section",
+      "title": "General",
+      "items": ["name"]
+    },
+    {
+      "type": "section",
+      "title": "Fans",
+      "items": ["fans"]
+    }
+  ]
+}

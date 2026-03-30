@@ -1,0 +1,37 @@
+
+### 2. `package.json`
+```json
+{
+  "name": "homebridge-pax-calima",
+  "version": "1.0.0",
+  "description": "Homebridge plugin for Pax Calima and Vent-Axia Svara Bluetooth bathroom fans",
+  "main": "index.js",
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "pax",
+    "calima",
+    "vent-axia",
+    "svara",
+    "ble",
+    "bluetooth",
+    "fan",
+    "extractor",
+    "bathroom"
+  ],
+  "engines": {
+    "homebridge": "^1.6.0 || ^2.0.0"
+  },
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2"
+  },
+  "homepage": "https://github.com/JayC68/homebridge-pax-calima",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayC68/homebridge-pax-calima.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JayC68/homebridge-pax-calima/issues"
+  },
+  "license": "Apache-2.0"
+}
