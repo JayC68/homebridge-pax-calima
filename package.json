@@ -1,14 +1,10 @@
-
-### 2. `package.json`
-```json
 {
   "name": "homebridge-pax-calima",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Homebridge plugin for Pax Calima and Vent-Axia Svara Bluetooth bathroom fans",
   "main": "index.js",
   "keywords": [
     "homebridge-plugin",
-    "homebridge",
     "pax",
     "calima",
     "vent-axia",
