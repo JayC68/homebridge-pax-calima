@@ -56,8 +56,10 @@ class PaxCalimaAccessory {
     this.name = `Bathroom Fan ${this.mac.slice(-5).toUpperCase()}`;
     this.pin = '012345'; // override in config.schema if needed
 
-    this.accessory = new Accessory(this.name, Accessory.generateUUID(`pax-svara-${this.mac}`));
-    this.accessory.category = Categories.FAN;
+    // Correct UUID generation for modern Homebridge / HAP-NodeJS
+const uuid = API.hap.uuid.generate(`pax-svara-${this.mac}`);
+this.accessory = new Accessory(this.name, uuid);
+this.accessory.category = Categories.FAN;
 
     this.peripheral = null;
     this.connected = false;
