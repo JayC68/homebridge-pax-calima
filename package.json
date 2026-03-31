@@ -19,7 +19,7 @@
     "homebridge": "^1.6.0 || ^2.0.0"
   },
   "dependencies": {
-    "@abandonware/noble": "^1.9.2"
+      "@abandonware/noble": "1.9.2-26"
   },
   "homepage": "https://github.com/JayC68/homebridge-pax-calima",
   "repository": {
