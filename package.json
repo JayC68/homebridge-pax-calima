@@ -1,6 +1,6 @@
 {
   "name": "homebridge-pax-calima",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Homebridge plugin for Pax Calima and Vent-Axia Svara Bluetooth bathroom fans",
   "main": "index.js",
   "keywords": [
